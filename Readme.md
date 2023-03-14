@@ -12,7 +12,7 @@
 
 - 🌱 I’m currently learning **React**
 
-- 👨‍💻 All of my projects are available at [sarava338.github.io](sarava338.github.io)
+- 👨‍💻 All of my projects are available at [sarava338](https://sarava338.netlify.app)
 
 - 💬 Ask me about **JavaScript, HTML, CSS**
 
