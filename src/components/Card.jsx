@@ -1,28 +1,28 @@
 const Card = ({repo}) => {
 
-  repo.language = repo.language==='JavaScript' ? 'js' : repo.language;
+  var {language, name, full_name, html_url} = repo
+
+  language = language==='JavaScript' ? 'js' : language
 
   return (
     <section className="card">
-      <h3>{repo.name}</h3>
-      <p>Mostly used lang : {repo.language}</p>
-      <div className="card-links">
+      <h3>{name}</h3>
+      <p>Mostly used lang : {language}</p>
+      <div>
         <a
-          className="a card-a"
-          href={repo.html_url}
+          href={html_url}
           target="_blank"
           rel="noreferrer"
         >
           code
         </a>
         <a
-          className="a card-a"
-          href={`https://${repo.full_name.replace("/", "-")}.netlify.app`}
+          href={`https://${full_name.replace("/", "-")}.netlify.app`}
           target="_blank"
           rel="noreferrer"
         >
           view
-        </a>{" "}
+        </a>
       </div>
     </section>
   );
