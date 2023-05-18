@@ -7,7 +7,6 @@ const Card = ({repo}) => {
   return (
     <section className="card">
       <h3>{name}</h3>
-      <p>Mostly used lang : {language}</p>
       <div>
         <a
           href={html_url}
