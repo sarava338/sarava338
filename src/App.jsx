@@ -2,10 +2,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
+import ParticleBackground from "./components/ParticleBackground";
 
 const App = () => {
   return (
     <>
+    <ParticleBackground />
       <BrowserRouter>
         <Header />
         <Routes>
