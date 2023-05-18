@@ -1,12 +1,15 @@
 :root {
   --dark-color: #121212;
-  --theme-color: rgb(8, 192, 8);
+  --second-dark-color: #333;
+  --theme-color: rgb(247, 216, 38);
   --light-color: #eee;
 }
 
 body {
+  margin: 0;
   background-color: var(--dark-color);
   color: var(--light-color);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 section {
@@ -14,10 +17,10 @@ section {
 }
 
 .home {
-  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--light-color);
 }
 
 .cards {
@@ -28,7 +31,7 @@ section {
 
 h1 {
   font-size: 8vw;
-  text-shadow: 5px 4px 15px var(--theme-color);
+  text-shadow: 0px 0px 10px var(--theme-color);
 }
 
 h2, h3 {
@@ -51,6 +54,7 @@ nav, ul, .card div {
 .card {
   border: 1px solid var(--light-color);
   padding: 20px;
+  box-shadow: 0px 0px 10px 2px var(--theme-color);
 }
 
 nav, ul {
@@ -58,11 +62,15 @@ nav, ul {
   padding: 0 40px;
 }
 
+p, li, a {
+  font-size: 20px;
+}
+
 a {
   text-decoration: none;
   color: var(--light-color);
 }
 
-li{
+li {
   list-style: none;
 }
