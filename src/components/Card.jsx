@@ -1,6 +1,7 @@
+import PropTypes from "prop-types"
 const Card = ({repo}) => {
 
-  const {title, code_url, deploy_url} = repo
+  const {title, code_url, deploy_url} = repo;
 
   return (
     <section className="card">
@@ -24,5 +25,12 @@ const Card = ({repo}) => {
     </section>
   );
 };
+
+Card.propTypes = {
+  repo: PropTypes.object,
+  title : PropTypes.string,
+  deploy_url: PropTypes.string,
+  code_url: PropTypes.string,
+}
 
 export default Card;
