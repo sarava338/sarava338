@@ -1,6 +1,6 @@
 const Card = ({repo}) => {
 
-  var {title, code_url, deploy_url} = repo
+  const {title, code_url, deploy_url} = repo
 
   return (
     <section className="card">
