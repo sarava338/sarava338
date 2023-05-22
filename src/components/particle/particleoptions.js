@@ -14,7 +14,7 @@ export const option = {
     },
     modes: {
       push: {
-        quantity: 8,
+        quantity: 0,
       },
       repulse: {
         distance: 100,
