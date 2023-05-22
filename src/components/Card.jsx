@@ -1,22 +1,20 @@
 const Card = ({repo}) => {
 
-  var {language, name, full_name, html_url} = repo
-
-  language = language==='JavaScript' ? 'js' : language
+  var {title, code_url, deploy_url} = repo
 
   return (
     <section className="card">
-      <h3>{name}</h3>
+      <h3>{title}</h3>
       <div>
         <a
-          href={html_url}
+          href={code_url}
           target="_blank"
           rel="noreferrer"
         >
           code
         </a>
         <a
-          href={`https://${full_name.replace("/", "-")}.netlify.app`}
+          href={deploy_url}
           target="_blank"
           rel="noreferrer"
         >
