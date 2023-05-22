@@ -1,9 +1,9 @@
 const Home = () => {
   return (
     <>
-      <section className="home">
+      <article className="home">
         <h1>SARAVANAN<br/>LAKSHMANAN</h1>
-      </section>
+      </article>
     </>
   );
 };
