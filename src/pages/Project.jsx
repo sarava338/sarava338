@@ -1,17 +1,10 @@
-import Card from "../components/Card";
-import { repos } from "../helper/repos";
+import Cards from "../components/projects/Cards";
 
 const Project = () => {
-
   return (
-    <article className="project">
-      <h2>Projects</h2>
-      <article className="cards">
-        {repos?.map((i) => (
-          <Card repo={i} key={i.title} />
-        ))}
-      </article>
-    </article>
+    <>
+      <Cards />
+    </>
   );
 };
 
