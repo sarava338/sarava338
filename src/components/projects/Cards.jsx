@@ -1,16 +1,14 @@
 import Card from "./Card";
 import { repos } from "./repos";
+import "./index.css";
 
 const Cards = () => {
   return (
-    <>
-      <h2>Projects</h2>
-      <article className="cards">
-        {repos?.map((i) => (
-          <Card repo={i} key={i.title} />
-        ))}
-      </article>
-    </>
+    <article className="cards">
+      {repos?.map((i) => (
+        <Card repo={i} key={i.title} />
+      ))}
+    </article>
   );
 };
 
