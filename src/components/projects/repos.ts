@@ -1,4 +1,10 @@
-export const repos = [
+export interface Repo {
+  title: string;
+  deploy_url: string;
+  code_url: string;
+}
+
+export const repos: Repo[] = [
   {
     title: "Speech to Text",
     deploy_url: "https://sarava338-speech-to-text.netlify.app/",

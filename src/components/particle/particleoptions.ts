@@ -1,3 +1,5 @@
+export interface ParticleOption {}
+
 export const option = {
   fpsLimit: 60,
   interactivity: {
