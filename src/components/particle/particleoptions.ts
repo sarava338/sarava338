@@ -45,7 +45,7 @@ export const option = {
         default: "bounce",
       },
       random: false,
-      speed: 3,
+      speed: .3,
       straight: false,
     },
     number: {
