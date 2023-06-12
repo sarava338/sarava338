@@ -1,3 +1,5 @@
+import CubeCanvas from "../components/3dmodels/cube/Cube";
+
 const Home = () => {
   return (
     <>
@@ -8,6 +10,7 @@ const Home = () => {
           Saravanan Lakshmanan
         </h1>
       </article>
+      <CubeCanvas />
     </>
   );
 };
