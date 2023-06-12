@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import CanvasLoader from "../Loader";
 
 const Cube = () => {
-  const cube = useGLTF("../../../../public/cube.glb");
+  const cube = useGLTF("/cube.glb");
 
   return (
     <mesh>
