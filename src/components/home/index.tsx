@@ -1,4 +1,5 @@
-import CubeCanvas from "../3dmodels/cube";
+import Cube from "../3dmodels/Cube";
+import Skills from "../3dmodels/Skills";
 import styles from "./index.module.css";
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
           Saravanan Lakshmanan
         </h1>
       </article>
-      <CubeCanvas />
+      <Cube />
     </>
   );
 };
