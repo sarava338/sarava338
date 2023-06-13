@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 #3d Blender models
-models
+blendmodels
