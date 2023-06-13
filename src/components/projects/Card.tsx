@@ -1,12 +1,13 @@
 import { Repo } from "./repos";
+import css from "./index.module.css";
 
 const Card = (props: { repo: Repo }) => {
   const { title, code_url, deploy_url } = props.repo;
 
   return (
-    <section className="card">
+    <section className={css.card}>
       <h3>{title}</h3>
-      <div>
+      <div className={css.links}>
         <a href={code_url} target="_blank" rel="noreferrer">
           code
         </a>

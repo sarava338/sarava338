@@ -1,10 +1,10 @@
 import Card from "./Card";
-import { Repo, repos } from "./repos";
-import "./index.css";
+import { repos } from "./repos";
+import css from "./index.module.css";
 
 const Cards = () => {
   return (
-    <article className="cards">
+    <article className={css.cards}>
       {repos.map((repo) => (
         <Card repo={repo} key={repo.title} />
       ))}

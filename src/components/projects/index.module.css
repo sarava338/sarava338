@@ -10,7 +10,7 @@
   box-shadow: 0px 0px 10px 2px var(--theme-color);
 }
 
-.card div {
+.links {
   display: flex;
   justify-content: space-between;
 }
