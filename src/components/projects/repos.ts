@@ -2,6 +2,8 @@ export interface Repo {
   title: string;
   deploy_url: string;
   code_url: string;
+  img?: string;
+  description?: string;
 }
 
 export const repos: Repo[] = [

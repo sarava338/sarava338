@@ -13,6 +13,7 @@ const Home = () => {
         </h1>
       </article>
       <Cube />
+      <Skills />
     </>
   );
 };
