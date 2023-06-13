@@ -1,6 +1,6 @@
-import Cards from "../components/projects/Cards";
+import Cards from "./Cards";
 
-const Project = () => {
+const Projects = () => {
   return (
     <article className="project">
       <h2>Projects</h2>
@@ -9,4 +9,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Projects;

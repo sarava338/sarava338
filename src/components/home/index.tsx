@@ -1,9 +1,10 @@
-import CubeCanvas from "../components/3dmodels/cube/Cube";
+import CubeCanvas from "../3dmodels/cube";
+import styles from "./index.module.css";
 
 const Home = () => {
   return (
     <>
-      <article className="home">
+      <article>
         <h1>
           <small>Hi, I am</small>
           <br />
