@@ -4,6 +4,7 @@ import { useGLTF } from "@react-three/drei";
 
 const Skills = () => {
   const react = useGLTF("/models/react.glb");
+  const js = useGLTF("/models/js.glb");
 
   return (
     <CanvasWrapper cameraPosition={{ position: [20, 3, 15], fov: 25 }}>
@@ -11,6 +12,7 @@ const Skills = () => {
         <hemisphereLight intensity={1} groundColor="black" />
         <pointLight intensity={1} />
         <primitive object={react.scene} />
+        <primitive object={js.scene} />
       </mesh>
     </CanvasWrapper>
   );
