@@ -1,20 +1,22 @@
-import React from "react";
+import { Canvas } from "@react-three/fiber";
+import JsModel from "./Js";
+import ReactModel from "./React";
 import CanvasWrapper from "./utils/CanvasWrapper";
-import { useGLTF } from "@react-three/drei";
 
 const Skills = () => {
-  const react = useGLTF("/models/react.glb");
-  const js = useGLTF("/models/js.glb");
-
   return (
-    <CanvasWrapper cameraPosition={{ position: [20, 3, 15], fov: 25 }}>
-      <mesh>
-        <hemisphereLight intensity={1} groundColor="black" />
-        <pointLight intensity={1} />
-        <primitive object={react.scene} />
-        <primitive object={js.scene} />
-      </mesh>
-    </CanvasWrapper>
+    <>
+      <CanvasWrapper rotation={[Math.PI / 2, 0, 0]}>
+        <ambientLight />
+        <pointLight  />
+        <JsModel />
+      </CanvasWrapper>
+      <CanvasWrapper rotation={[Math.PI / 2, 0, 0]}>
+        <ambientLight />
+        <pointLight />
+        <ReactModel/>
+      </CanvasWrapper>
+    </>
   );
 };
 
