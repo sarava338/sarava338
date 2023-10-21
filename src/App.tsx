@@ -1,5 +1,10 @@
-function App() {
-  return <h1>Saravanan Lakshmanan</h1>;
-}
+import Contacts from "./components/Contacts";
 
-export default App;
+export default function App() {
+  return (
+    <>
+      <h1>Saravanan Lakshmanan</h1>
+      <Contacts />
+    </>
+  );
+}
