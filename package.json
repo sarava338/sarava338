@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "rm -f dist/index.* && parcel build public/index.html --dist-dir dist",
-    "deploy": "firebase deploy"
+    "clean": "rm -rf .firebase .parcel-cache",
+    "build": "rm -f dist/index.* && parcel build public/index.html --dist-dir dist"
   },
   "dependencies": {
     "firebase": "^10.5.0",
