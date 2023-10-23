@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "rm -f dist/index.* && parcel public/index.html",
     "build": "rm -f dist/index.* && parcel build public/index.html --dist-dir dist",
     "deploy": "firebase deploy"
   },
