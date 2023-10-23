@@ -4,46 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-      :root {
-        --theme-color: #21e0e0ec;
-      }
-
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: var(--bg-color);
-        color: var(--text-color);
-        margin: 3rem 5vw;
-      }
-
-      header,
-      header ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      header li {
-        list-style: none;
-        margin-right: 20px;
-      }
-
-      header a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      main h1 {
-        color: var(--theme-color);
-        text-align: left;
-        font-size: 12vw;
-      }
-
-      footer {
-        text-align: center;
-      }
-    </style>
-
+    <link rel="stylesheet" href="style.css" />
     <title>sarava338</title>
   </head>
   <body>
@@ -54,6 +15,7 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
           <button id="theme-handler">theme</button>
         </ul>
       </nav>
@@ -66,44 +28,72 @@
     <article>
       <section id="experience"><h2>Experience</h2></section>
       <section id="projects"><h2>Side Projects</h2></section>
-      <section id="skills"><h2>Skills</h2></section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="card">card1</div>
+        <div class="card">card2</div>
+        <div class="card">card3</div>
+        <div class="card">card4</div>
+        <div class="card">card5</div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <ul>
+          <li><a target="_blank" href="https://t.me/sarava338">Telegram</a></li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/sarava338"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/sarava338"
+              >linkedin</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://www.github.com/sarava338"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/sarava338"
+              >Facebook</a
+            >
+          </li>
+        </ul>
+
+        <p style="text-align: center">
+          Or else feel free to submit the below form
+        </p>
+
+        <form action="" id="form">
+          <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Your name" />
+          </div>
+
+          <div>
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" placeholder="Your email" />
+          </div>
+
+          <div>
+            <label for="message">Message: </label>
+            <textarea
+              name="message"
+              id="message"
+              rows="10"
+              placeholder="Recruit me with your heart contents"></textarea>
+          </div>
+        </form>
+      </section>
     </article>
 
     <footer>
       <p>@ sarava338</p>
     </footer>
 
-    <script type="module">
-      const themeHandler = document.getElementById('theme-handler')
-      const root = document.documentElement.style
-
-      const DARK_THEME_COLOR = '#333333'
-      const BRIGHT_THEME_COLOR = '#fffff1'
-
-      const setTheme = (theme) => {
-        switch (theme) {
-          case 'bright':
-            localStorage.setItem('theme', theme)
-            root.setProperty('--bg-color', BRIGHT_THEME_COLOR)
-            root.setProperty('--text-color', DARK_THEME_COLOR)
-            return
-
-          default:
-            localStorage.setItem('theme', 'dark')
-            root.setProperty('--bg-color', DARK_THEME_COLOR)
-            root.setProperty('--text-color', BRIGHT_THEME_COLOR)
-            return
-        }
-      }
-
-      document.body.onload = () => {
-        setTheme(localStorage.getItem('theme'))
-      }
-
-      themeHandler.addEventListener('click', () => {
-        if (localStorage.getItem('theme') === 'dark') setTheme('bright')
-        else setTheme('dark')
-      })
-    </script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

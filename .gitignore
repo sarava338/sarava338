@@ -30,3 +30,4 @@ dist-ssr
 
 # deploynment cache files
 .firebase
+.parcel-cache
