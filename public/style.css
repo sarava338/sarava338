@@ -1,3 +1,27 @@
-* {
+body{
+  margin: 3rem 5vw;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+header, header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+main h1 {
+  text-align: left;
+  font-size: 12vw;
+}
+
+footer {
+  text-align: center;
 }
