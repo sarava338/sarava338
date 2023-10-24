@@ -45,3 +45,14 @@ input {
 footer {
   text-align: center;
 }
+
+.cards {
+}
+
+.card {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid var(--theme-color);
+  border-radius: 6px;
+}
