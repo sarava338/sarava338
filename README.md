@@ -67,10 +67,6 @@ I'm currently working at TCS, India
 
 ![](https://quotes-github-readme.vercel.app/api?type=vetical&theme=dark)
 
-### 🔝 Top Contributed Repo
-
-![](https://github-contributor-stats.vercel.app/api?username=sarava338&limit=5&theme=dark&combine_all_yearly_contributions=true)
-
 ### 😂 Random Dev Meme
 
 <img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
