@@ -1,7 +1,7 @@
 # 💫 About Me:
-
+...
 I am Saravanan Lakshmanan, Software Developer at TCS, India
-
+...
 ## 🌐 Socials:
 
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/7HzUJhhr)
