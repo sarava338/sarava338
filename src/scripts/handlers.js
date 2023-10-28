@@ -15,17 +15,17 @@ export const errorHandler = (error) => {
 export const themeHandler = (theme) => {
   switch (theme) {
     case 'bright':
-      localStorage.setItem('theme', theme)
+      setTheme(DARK_COLOR)
       root.setProperty('--bg-color', BRIGHT_COLOR)
       root.setProperty('--text-color', DARK_COLOR)
-      setTheme(DARK_COLOR)
+      localStorage.setItem('theme', theme)
       return
 
     default:
-      localStorage.setItem('theme', 'dark')
+      setTheme(BRIGHT_COLOR)
       root.setProperty('--bg-color', DARK_COLOR)
       root.setProperty('--text-color', BRIGHT_COLOR)
-      setTheme(BRIGHT_COLOR)
+      localStorage.setItem('theme', 'dark')
       return
   }
 }
