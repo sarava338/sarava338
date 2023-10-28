@@ -1,6 +1,6 @@
 # 💫 About Me:
 
-I'm currently working at TCS, India
+I am Saravanan Lakshmanan, Software Developer at TCS, India
 
 ## 🌐 Socials:
 
