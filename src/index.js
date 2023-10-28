@@ -1,5 +1,6 @@
 import { formHandler } from './scripts/handlers.js'
 import { setTheme } from './scripts/utils.js'
+import './styles/main.scss'
 
 const themeButton = document.getElementById('theme-handler')
 const form = document.getElementById('form')
