@@ -17,6 +17,12 @@ body
       @include flex-container()
     ul
       @include ul-style()
+      li
+        button
+          background: none
+          border: none
+          &:hover
+            cursor: pointer
 
   main
     h1

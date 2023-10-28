@@ -1,17 +1,16 @@
-import { formHandler } from './scripts/handlers.js'
-import { setTheme } from './scripts/utils.js'
+import { formHandler, themeHandler } from './scripts/handlers.js'
 import './styles/main.sass'
 
 const themeButton = document.getElementById('theme-handler')
 const form = document.getElementById('form')
 
 document.body.onload = () => {
-  setTheme(localStorage.getItem('theme'))
+  themeHandler(localStorage.getItem('theme'))
 }
 
 themeButton.addEventListener('click', () => {
-  if (localStorage.getItem('theme') === 'dark') setTheme('bright')
-  else setTheme('dark')
+  if (localStorage.getItem('theme') === 'dark') themeHandler('bright')
+  else themeHandler('dark')
 })
 
 form.addEventListener('submit', (e) => {

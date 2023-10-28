@@ -1,10 +1,11 @@
 import { DARK_COLOR, BRIGHT_COLOR } from './constants.js'
 
-const root = document.documentElement.style
 const socialMediaElements =
   document.getElementsByClassName('social_media_links')
 
-const setSocialMediaIconColor = (color) => {
+const themeButton = document.getElementById('theme-handler').children[0]
+
+export const setTheme = (color) => {
   color = color.slice(1)
   const size = '50'
   //https://icons8.com/
@@ -18,26 +19,12 @@ const setSocialMediaIconColor = (color) => {
     `https://img.icons8.com/${color}/ios-filled/${size}/coffee-to-go.png`,
   ]
 
+  color === '333333'
+    ? (themeButton.src = `https://img.icons8.com/${color}/ios-filled/25/crescent-moon.png`)
+    : (themeButton.src = `https://img.icons8.com/${color}/ios-filled/25/sun.png`)
+
   for (let i = 0; i < socialMediaIcons.length; i++) {
     socialMediaElements[i].src = socialMediaIcons[i]
-  }
-}
-
-export const setTheme = (theme) => {
-  switch (theme) {
-    case 'bright':
-      localStorage.setItem('theme', theme)
-      root.setProperty('--bg-color', BRIGHT_COLOR)
-      root.setProperty('--text-color', DARK_COLOR)
-      setSocialMediaIconColor(DARK_COLOR)
-      return
-
-    default:
-      localStorage.setItem('theme', 'dark')
-      root.setProperty('--bg-color', DARK_COLOR)
-      root.setProperty('--text-color', BRIGHT_COLOR)
-      setSocialMediaIconColor(BRIGHT_COLOR)
-      return
   }
 }
 
