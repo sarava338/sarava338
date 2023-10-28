@@ -10,7 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
     clean: true,
-    assetModuleFileName: '[name][ext]',
+    assetModuleFilename: 'asset/[name][ext]',
   },
   devtool: 'source-map',
   devServer: {
