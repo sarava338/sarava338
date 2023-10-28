@@ -1,0 +1,74 @@
+@use 'foundation/_mixins'
+@import foundation
+
+:root
+  --bg-color: ''
+  --text-color: ''
+  --theme-color: #05c5c5ec
+
+body
+  font-family: Arial, Helvetica, sans-serif
+  background-color: var(--bg-color)
+  color: var(--text-color)
+  margin: 3rem 5vw
+
+  header
+    &
+      @include flex-container()
+    ul
+      @include ul-style()
+
+  main
+    h1
+      color: var(--theme-color)
+      text-align: left
+      font-size: 12vw
+
+  article
+    #projects
+      .cards
+        @include flex-container('', '')
+        flex-wrap: wrap
+        .card
+          width: 40%
+          padding: 10px
+          margin: 10px
+          border: 2px solid var(--theme-color)
+          border-radius: 6px
+    // #expeience
+    // #skills
+    #contact
+      ul
+        @include ul-style()
+
+      form
+        margin: 40px 0
+        padding: 20px 0
+        display: grid
+        justify-content: center
+        justify-items: center
+
+        textarea, input
+          min-width: 350px
+          max-width: 500px
+          padding: 10px
+          margin: 10px 0px 20px 0px
+          color: var(--text-color)
+          background-color: var(--bg-color)
+          border: 2px solid var(--theme-color)
+          border-radius: 6px
+          width: 100%
+
+          button
+            min-width: 200px
+            max-width: 300px
+            padding: 10px
+            margin-top: 10px
+            border: none
+            border-radius: 100px
+            background-color: var(--theme-color)
+            &:hover
+              padding: 12px
+
+  footer
+    text-align: center
