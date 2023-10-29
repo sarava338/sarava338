@@ -13,6 +13,8 @@ export const setTheme = (color) => {
     `https://img.icons8.com/${color}/ios-filled/${size}/telegram.png`,
     `https://img.icons8.com/${color}/ios-filled/${size}/instagram-new--v1.png`,
     `https://img.icons8.com/${color}/ios-filled/${size}/linkedin.png`,
+    `https://img.icons8.com/${color}/external-tal-revivo-bold-tal-revivo/${size}/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-bold-tal-revivo.png`,
+    `https://img.icons8.com/color/${size}/GeeksforGeeks.png`,
     `https://img.icons8.com/${color}/ios-filled/${size}/github.png`,
     `https://img.icons8.com/${color}/ios-filled/${size}/facebook-new.png`,
     `https://img.icons8.com/${color}/ios-filled/${size}/youtube-play.png`,
