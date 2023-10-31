@@ -20,10 +20,6 @@ export const getSocialMediaData = (color = '333333', size = '50') => [
     url: 'https://auth.geeksforgeeks.org/user/sarava338',
   },
   {
-    src: `https://assets.exercism.org/meta/favicon-32x32.png`,
-    url: 'https://exercism.org/profiles/sarava338',
-  },
-  {
     src: `https://img.icons8.com/${color}/ios-filled/${size}/github.png`,
     url: 'https://www.github.com/sarava338',
   },
