@@ -19,6 +19,7 @@ export const setTheme = (color) => {
     a.target = '_blank'
     let img = document.createElement('img')
     img.src = data.src
+    img.alt = data.alt
     a.append(img)
     li.append(a)
     socialMediaElement.append(li)
