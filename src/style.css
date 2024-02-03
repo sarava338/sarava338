@@ -10,22 +10,29 @@
 }
 
 body {
+  background-color: var(--theme-color);
   margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#nav {
-  background-color: aqua;
-}
-
-nav {
-  display: flex;
-  flex-direction: column;
-}
-
-#links {
-  background-color: lime;
+article {
+  width: 80vw;
+  margin: auto;
 }
 
 h1 {
-  font-size: 18vw;
+  font-size: 2.5vw;
+}
+
+#header {
+  display : flex;
+  justify-content: flex-end;
+}
+
+.details {
+  text-align: right;
+}
+
+img {
+  height: 300px;
 }
