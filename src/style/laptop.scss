@@ -1,0 +1,23 @@
+header {
+  display : flex;
+  justify-content: flex-end;
+  .details {
+    text-align: right;
+    h1 {
+      font-size: 2.5vw; 
+    }
+    .stacks {
+      margin-top: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+  img {
+    height: 300px;
+  }
+}

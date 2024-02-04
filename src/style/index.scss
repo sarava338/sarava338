@@ -1,0 +1,21 @@
+:root {
+  --dark-color: black;
+  --bright-color: white;
+  --theme-color: rgb(49, 154, 168);
+}
+
+* {
+  background-color: var(--dark-color);
+  color: var(--bright-color);
+}
+
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+main {
+  background-color: var(--theme-color);
+  padding: 0 10vw;
+  margin: 50px auto;
+}
